@@ -1,7 +1,7 @@
 galaxy_info:
   author: Vineet Negi
-  description: A role to create a Kubernetes Multi Node Cluster - with 1 Master node & mutiple Worker nodes (by default 2, but scalable).
-  The role can be used to setup the cluster on AWS Cloud.
+  description: 'A role to create a Kubernetes Multi Node Cluster - with 1 Master node & mutiple Worker nodes (by default 2, but scalable).
+  The role can be used to setup the cluster on AWS Cloud.'
 
 
   # If the issue tracker for your role is not on github, uncomment the
