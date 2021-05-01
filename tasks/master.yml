@@ -5,13 +5,10 @@
   notify: startflannel
   register: x
 
-
 - name: " Printing Token"
   command: "kubeadm token create --print-join-command"
   register: token
   when: x.changed is true
-
-  
 
 - name: " Storing to local storage"
   copy:
