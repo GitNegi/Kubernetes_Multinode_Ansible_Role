@@ -15,7 +15,7 @@
 
 - name: " Storing to local storage"
   copy:
-          content: "{{token.stdout}}"
+          content: "{{ token.stdout }}"
           dest: /ansi/k8s_final/MultiNodeCluster/files/token.txt
   delegate_to: localhost
 
@@ -29,6 +29,6 @@
           src: /etc/kubernetes/admin.conf
           dest: $HOME/.kube/config
           remote_src: yes
-          owner: "{{ansible_effective_user_id}}"
-          group: "{{ansible_effective_group_id}}"
+          owner: "{{ ansible_effective_user_id }}"
+          group: "{{ ansible_effective_group_id }}"
 
