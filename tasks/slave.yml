@@ -1,0 +1,5 @@
+- name: " Fetching the Token "
+  copy:
+          src: token.txt
+          dest: /root/token.txt
+  notify: runtoken
